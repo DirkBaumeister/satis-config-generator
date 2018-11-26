@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/console": "^3.4",
+        "symfony/yaml": "^3.4",
+        "symfony/filesystem": "^3.4",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Twissi\\SatisConfigGenerator\\Commands\\": "./commands"
+        }
+    }
+}

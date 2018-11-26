@@ -1,0 +1,9 @@
+/composer-cache/*
+!/composer-cache/.gitkeep
+/workdir/*
+!/workdir/.gitkeep
+/vendor
+/.idea
+/satis-config.json
+/composer.lock
+/config.yml

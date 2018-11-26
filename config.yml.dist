@@ -1,0 +1,30 @@
+config:
+
+  # If your composer is not in your paths you can set its path here
+  composer_path: "composer"
+
+  # Enable this option if you want to cleanup the work directory after execution
+  cleanup: true
+
+  # Enable this option if you want to use the composer cache (located in folder composer-cache)
+  cache: true
+
+# See syntax at https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md
+
+satis:
+  name: "Test Repository Mirror"
+  homepage: "http://repo.example.org"
+  repositories:
+    - type: "composer"
+      url: "https://packagist.org"
+  require-dependencies: true
+  archive:
+    directory: "dist"
+    format: "tar"
+
+# Place github repo composer.json urls here
+
+repos:
+  - "https://raw.githubusercontent.com/vendor-name/package-name/master/composer.json"
+  - "https://raw.githubusercontent.com/vendor-name/package-name-2/master/composer.json"
+  - "https://raw.githubusercontent.com/vendor-name/package-name-3/master/composer.json"
